@@ -72,10 +72,6 @@ To contribute or COllaborate follow these steps:
 ## SCREENSHOTS
 ![Screenshot from 2022-10-14 20-21-28](https://user-images.githubusercontent.com/24671358/195906021-5e12a594-d6e2-43ae-9a42-b5a5615b8866.png)
 
-
-
-
-
 \- Click this link to see the live website )
 
 ## License
