@@ -4,7 +4,7 @@
 
 ### landing page
 
-![Tembea Kenya](./src/images/)
+![Tembea Kenya]
 
 ## Table of Content
 
