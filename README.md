@@ -43,7 +43,7 @@ A user visiting this page would be able to see the login/signup page first then 
 - **Figma** - Designed with: Figma https://www.figma.com/
 
 - **HTML** 
-- 
+  
 - **React** - help in creating interactive website
 
 - **CSS** - Styling.
