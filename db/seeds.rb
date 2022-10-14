@@ -6,16 +6,16 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 puts "Seeding flights"
-flight1 = Flight.create(name: "Solo Flight", description: "Spanish speaking country, tapas, and beer", creator: "Erica", location: "Spain", start_date: "05/05/22", end_date: "05/25/22", image: "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1270,c_fill,g_auto,h_714,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170706113411-spain.jpg", budget: 900)
+flight1 = Flight.create(name: "Solo Flight", description: "Spanish speaking country, tapas, and beer", creator: "Erica", location: "Kenya", start_date: "05/05/22", end_date: "05/25/22", image: "https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1270,c_fill,g_auto,h_714,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170706113411-spain.jpg", budget: 900)
 
-flight2 = Flight.create(name: "Graduation Flight", description: "Tropical location, luaus, Road to Hana", creator: "Natalie", location: "Hawaii", start_date: "07/02/22", end_date: "07/07/22", image: "https://image.cnbcfm.com/api/v1/image/106755951-1603356916166-gettyimages-176612815-97e38d42-7d03-4258-b1a9-13dcaea7512c.jpeg?v=1603412599", budget: 1200)
+flight2 = Flight.create(name: "Graduation", description: "Tropical location, luaus, Road to Hana", creator: "Natalie", location: "Kenya", start_date: "07/02/22", end_date: "07/07/22", image: "https://image.cnbcfm.com/api/v1/image/106755951-1603356916166-gettyimages-176612815-97e38d42-7d03-4258-b1a9-13dcaea7512c.jpeg?v=1603412599", budget: 1200)
 
-flight3 = Flight.create(name: "Girl's Flight", description: "Sushi, street food, robot restaurant, Harajuku", creator: "Natalie", location: "Japan", start_date: "11/10/22", end_date: "11/20/22", image: "https://www.schwab.com/resource-center/insights/sites/g/files/eyrktu156/files/getty_1131743616_960x537.jpg", budget: 1700)
+flight3 = Flight.create(name: "Girl's ", description: "Sushi, street food, robot restaurant, Harajuku", creator: "Natalie", location: "Japan", start_date: "11/10/22", end_date: "11/20/22", image: "https://www.schwab.com/resource-center/insights/sites/g/files/eyrktu156/files/getty_1131743616_960x537.jpg", budget: 1700)
 
-flight4 = Flight.create(name: "Anniversary Flight", description: "Portuguese speaking country, Carnival, Christ the Redeemer Statue", creator: "Gabe", location: "Brazil", start_date: "02/11/24", end_date: "02/16/24", image: "https://ichef.bbci.co.uk/news/976/cpsprodpb/1145D/production/_110794707_gettyimages-590664365.jpg", budget: 600)
+flight4 = Flight.create(name: "Anniversary", description: "Portuguese speaking country, Carnival, Christ the Redeemer Statue", creator: "Gabe", location: "Brazil", start_date: "02/11/24", end_date: "02/16/24", image: "https://ichef.bbci.co.uk/news/976/cpsprodpb/1145D/production/_110794707_gettyimages-590664365.jpg", budget: 600)
 
 puts "Seeding schedules"
-schedule1 = Schedule.create(name: "La Sagrada Familia", description: "Church designed by the Spanish architect Antoni Gaudi.", location: "Barcelona", date: "05/12/22", start_time: "1:00 pm", duration: 2, cost: 25, flight: flight1)
+schedule1 = Schedule.create(name: "Family Get-together", description: "Church designed by the Spanish architect Antoni Gaudi.", location: "Barcelona", date: "05/12/22", start_time: "1:00 pm", duration: 2, cost: 25, flight: flight1)
 
 schedule2 = Schedule.create(name: "Road to Hana", description: "64.4 miles long stretch of Hawaii routes which connect Kahului to the town of Hana in East Maui.", location: "Maui", date: "07/04/22", start_time: "3:00 pm", duration: 4, cost: 10, flight: flight2)
 
