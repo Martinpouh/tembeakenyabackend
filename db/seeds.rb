@@ -19,7 +19,7 @@ schedule1 = Schedule.create(name: "Family Get-together", description: "Church de
 
 schedule2 = Schedule.create(name: "Road to Hana", description: "64.4 miles long stretch of Hawaii routes which connect Kahului to the town of Hana in East Maui.", location: "Maui", date: "07/04/22", start_time: "3:00 pm", duration: 4, cost: 10, flight: flight2)
 
-schedule3 = Schedule.create(name: "Robot Restaurant", description: "Restaurant in Japan that has a live show with robots that serve you dinner.", location: "Tokyo", date: "11/15/22", start_time: "7:00 pm", duration: 3, cost: 50, flight: flight3)
+schedule3 = Schedule.create(name: "Robot Restaurant", description: "Restaurant in Japan that has a live show with robots that serve you dinner.", location: "Tokyo", date: "11/16/22", start_time: "7:00 pm", duration: 3, cost: 50, flight: flight3)
 
 schedule4 = Schedule.create(name: "Carnival", description: "Held every year before lent. One of the biggest carnivals in the world.", location: "Rio de Janeiro", date: "02/13/22", start_time: "1:00 pm", duration: 8, cost: 0, flight: flight4)
 
