@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :schedules
   resources :passengers
   resources :passenger_schedules
   resources :passenger_flights
