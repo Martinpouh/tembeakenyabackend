@@ -8,6 +8,7 @@ class CreateSchedules < ActiveRecord::Migration[6.1]
       t.integer :duration
       t.integer :cost
       t.integer :flight_id
+      t.string :location
       t.timestamps
     end
   end

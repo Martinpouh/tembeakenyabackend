@@ -24,6 +24,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_120625) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "passenger_flights", force: :cascade do |t|
+    t.string "method_of_transportation"
+    t.integer "transportation_cost"
+    t.string "stay"
+    t.integer "stay_cost"
+    t.string "commentary"
+    t.integer "passenger_id"
+    t.integer "flight_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "passenger_schedules", force: :cascade do |t|
     t.integer "passenger_id"
     t.integer "schedule_id"
@@ -40,18 +52,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_120625) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "passengers_flights", force: :cascade do |t|
-    t.string "method_of_transportation"
-    t.integer "transportation_cost"
-    t.string "accommodation_description"
-    t.integer "accommodation_cost"
-    t.string "commentary"
-    t.integer "passenger_id"
-    t.integer "flight_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "schedules", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -60,6 +60,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_120625) do
     t.integer "duration"
     t.integer "cost"
     t.integer "flight_id"
+    t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
