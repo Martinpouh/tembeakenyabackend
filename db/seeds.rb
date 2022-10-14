@@ -15,7 +15,7 @@ flight3 = Flight.create(name: "Girl's ", description: "Sushi, street food, robot
 flight4 = Flight.create(name: "Anniversary", description: "Portuguese speaking country, Carnival, Christ the Redeemer Statue", creator: "Gabe", location: "Brazil", start_date: "02/11/24", end_date: "02/16/24", image: "https://ichef.bbci.co.uk/news/976/cpsprodpb/1145D/production/_110794707_gettyimages-590664365.jpg", budget: 600)
 
 puts "Seeding schedules"
-schedule1 = Schedule.create(name: "Family Get-together", description: "Church designed by the Spanish architect Antoni Gaudi.", location: "Barcelona", date: "05/12/22", start_time: "1:00 pm", duration: 2, cost: 25, flight: flight1)
+schedule1 = Schedule.create(name: "Family Get-together", description: "Church designed by Kenyan Architect.", location: "Barcelona", date: "05/12/22", start_time: "1:00 pm", duration: 2, cost: 25, flight: flight1)
 
 schedule2 = Schedule.create(name: "Road to Hana", description: "64.4 miles long stretch of Hawaii routes which connect Kahului to the town of Hana in East Maui.", location: "Maui", date: "07/04/22", start_time: "3:00 pm", duration: 4, cost: 10, flight: flight2)
 
