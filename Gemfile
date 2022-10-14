@@ -15,6 +15,8 @@ gem "sqlite3", "~> 1.4"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+gem 'bcrypt', '~> 3.1.7'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
@@ -26,6 +28,8 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
+
+gem "active_model_serializers", "~> 0.10.12"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
