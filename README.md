@@ -77,6 +77,9 @@ To contribute or COllaborate follow these steps:
 ## License
 
 ---
+## Contact Information
+* Email : martin.chege@student.moringaschool.com
+***** 
 
 MIT License
 
