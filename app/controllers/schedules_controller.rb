@@ -13,8 +13,8 @@ class SchedulesController < ApplicationController
 
     def create
         schedule = Schedule.create!(schedule_params)
-        passenger_schedule = PassengerSchedule.create!(
-            passenger_id: @current_passenger.id,
+        user_schedule = UserSchedule.create!(
+            user_id: @current_user.id,
             schedule_id: schedule.id
         )
         render json: schedule, status: :created

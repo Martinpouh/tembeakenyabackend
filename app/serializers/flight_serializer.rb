@@ -1,14 +1,14 @@
 class FlightSerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :creator, :location, :image, :budget, :passenger_flight, :passenger_schedules
+  attributes :id, :name, :description, :creator, :location, :image, :budget, :user_flight, :user_schedules
 
   has_many :schedules
-  has_many :passengers
+  has_many :users
 
-  def passenger_flight
-    current_passenger.passenger_flights.find_by(flight_id: object.id)
+  def user_flight
+    current_user.user_flights.find_by(flight_id: object.id)
   end
 
-  def passenger_schedules
-    current_passenger.passenger_schedules.filter{|passenger_schedule| passenger_schedule.schedule.flight_id == object.id}
+  def user_schedules
+    current_user.user_schedules.filter{|user_schedule| user_schedule.schedule.flight_id == object.id}
   end
 end

@@ -24,34 +24,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_120625) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "passenger_flights", force: :cascade do |t|
-    t.string "method_of_transportation"
-    t.integer "transportation_cost"
-    t.string "stay"
-    t.integer "stay_cost"
-    t.string "commentary"
-    t.integer "passenger_id"
-    t.integer "flight_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "passenger_schedules", force: :cascade do |t|
-    t.integer "passenger_id"
-    t.integer "schedule_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "passengers", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
-    t.string "email"
-    t.string "password_digest"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "schedules", force: :cascade do |t|
     t.string "name"
     t.string "description"
@@ -66,6 +38,34 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_120625) do
   end
 
   create_table "sessions", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_flights", force: :cascade do |t|
+    t.string "method_of_transportation"
+    t.integer "transportation_cost"
+    t.string "stay"
+    t.integer "stay_cost"
+    t.string "commentary"
+    t.integer "user_id"
+    t.integer "flight_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_schedules", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "schedule_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

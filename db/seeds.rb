@@ -23,26 +23,26 @@ schedule3 = Schedule.create(name: "Robot Restaurant", description: "Restaurant i
 
 schedule4 = Schedule.create(name: "Carnival", description: "Held every year before lent. One of the biggest carnivals in the world.", location: "Rio de Janeiro", date: "02/13/22", start_time: "1:00 pm", duration: 8, cost: 0, flight: flight4)
 
-puts "Seeding passengers"
-passenger1 = Passenger.create(first_name: "Martin", last_name: "Chege", email: "martinchege2015@gmail.com", password: "123", password_confirmation: "123")
+puts "Seeding users"
+user1 = User.create(first_name: "Martin", last_name: "Chege", email: "martinchege2015@gmail.com", password: "123", password_confirmation: "123")
 
-passenger2 = Passenger.create(first_name: "Natalie", last_name: "Barba", email: "nataliebarba@gmail.com", password: "123", password_confirmation: "123")
+user2 = User.create(first_name: "Natalie", last_name: "Barba", email: "nataliebarba@gmail.com", password: "123", password_confirmation: "123")
 
-passenger3 = Passenger.create(first_name: "Nicole", last_name: "Materosian", email: "nicolematerosian@gmail.com", password: "123", password_confirmation: "123")
+user3 = User.create(first_name: "Nicole", last_name: "Materosian", email: "nicolematerosian@gmail.com", password: "123", password_confirmation: "123")
 
-passenger4 = Passenger.create(first_name: "Gabe", last_name: "Rodriguez", email: "gaberodriguez@gmail.com", password: "123", password_confirmation: "123")
+user4 = User.create(first_name: "Gabe", last_name: "Rodriguez", email: "gaberodriguez@gmail.com", password: "123", password_confirmation: "123")
 
-puts "Seeding passenger flights"
-passengerflight1 = PassengerFlight.create(flight: flight1, passenger: passenger1, method_of_transportation: "Air", transportation_cost: 500, commentary: "Love the night life", stay: "Airbnb", stay_cost: 300)
+puts "Seeding user flights"
+userflight1 = UserFlight.create(flight: flight1, user: user1, method_of_transportation: "Air", transportation_cost: 500, commentary: "Love the night life", stay: "Airbnb", stay_cost: 300)
 
-passengerflight2 = PassengerFlight.create(flight: flight2, passenger: passenger2, method_of_transportation: "Air", transportation_cost: 600, commentary: "Very relaxing", stay: "Hotel", stay_cost: 900)
+userflight2 = UserFlight.create(flight: flight2, user: user2, method_of_transportation: "Air", transportation_cost: 600, commentary: "Very relaxing", stay: "Hotel", stay_cost: 900)
 
-passengerflight3 = PassengerFlight.create(flight: flight3, passenger: passenger3, method_of_transportation: "Bus", transportation_cost: 10, commentary: "Feels like a different planet", stay: "Airbnb", stay_cost: 300)
+userflight3 = UserFlight.create(flight: flight3, user: user3, method_of_transportation: "Bus", transportation_cost: 10, commentary: "Feels like a different planet", stay: "Airbnb", stay_cost: 300)
 
-passengerflight4 = PassengerFlight.create(flight: flight4, passenger: passenger4, method_of_transportation: "Train", transportation_cost: 70, commentary: "Best party of my life", stay: "Stay with a friend", stay_cost: 300)
+userflight4 = UserFlight.create(flight: flight4, user: user4, method_of_transportation: "Train", transportation_cost: 70, commentary: "Best party of my life", stay: "Stay with a friend", stay_cost: 300)
 
-puts "Seeding passenger flights"
-passengerschedule1 = PassengerSchedule.create(passenger: passenger1, schedule: schedule1)
-passengerschedule2 = PassengerSchedule.create(passenger: passenger2, schedule: schedule2)
-passengerschedule3 = PassengerSchedule.create(passenger: passenger3, schedule: schedule3)
-passengerschedule4 = PassengerSchedule.create(passenger: passenger4, schedule: schedule4)
+puts "Seeding user flights"
+userschedule1 = UserSchedule.create(user: user1, schedule: schedule1)
+userschedule2 = UserSchedule.create(user: user2, schedule: schedule2)
+userschedule3 = UserSchedule.create(user: user3, schedule: schedule3)
+userschedule4 = UserSchedule.create(user: user4, schedule: schedule4)

@@ -3,11 +3,11 @@ class ApplicationController < ActionController::API
     before_action :confirm_authentication
   
 
-    def current_passenger
-      @current_passenger ||= Passenger.find_by_id(session[:passenger_id])
+    def current_user
+      @current_user ||= User.find_by_id(session[:user_id])
     end
 
     def confirm_authentication
-      render json: { error: "Please log in"}, status: :unauthorized unless current_passenger
+      render json: { error: "Please log in"}, status: :unauthorized unless current_user
     end
 end

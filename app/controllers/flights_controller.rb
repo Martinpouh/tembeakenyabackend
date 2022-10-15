@@ -13,10 +13,10 @@ class FlightsController < ApplicationController
 
     def create
         flight = Flight.new(flight_params)
-        flight.creator = current_passenger.first_name
+        flight.creator = current_user.first_name
         flight.save!
-        passenger_flight = PassengerFlight.create!(
-            passenger_id: @current_passenger.id,
+        user_flight = UserFlight.create!(
+            user_id: @current_user.id,
             flight_id: flight.id
         )
         render json: flight, status: :created
@@ -35,7 +35,7 @@ class FlightsController < ApplicationController
     end
 
     def flightsbooked
-        render json: @current_passenger.flights.all
+        render json: @current_user.flights.all
     end
 
     private 
